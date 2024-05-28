@@ -1,0 +1,224 @@
+
+body {
+    /* background-color: lightsteelblue; */
+    /*background-image: linear-gradient(rgba(00,191,255,0.75), rgba(176, 196, 222, 0.5), rgba(00,191,255,0.75));
+    */
+    background-color: rgba(00,191,255,1);
+    margin: 0;
+    /*height: 3000px;*/
+}
+
+footer {
+    position:relative;
+    bottom: 0;
+}
+
+.footer-container {
+    display: flex;
+    border: 10em;
+    justify-content: space-evenly;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.navigation-bar{
+    background-color: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0%;
+    margin: 0;
+    border: 0;
+}
+
+.navigation-bar-items{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.hero-head {
+    text-shadow: -1px 0 rgb(182, 194, 190), 0 1px rgb(182, 194, 190), 1px 0 rgb(182, 194, 190), 0 -1px rgb(182, 194, 190);
+    font-size: xx-large;
+}
+
+.hero-content{
+    display: flex;
+    justify-content: center;
+    margin: 5em 0 5em 0;
+}
+
+.hero-desc{
+    margin-left: 5em;
+}
+
+.hero-desc-text{
+    text-align: center;
+    font-family: monospace;
+    width: 25em;
+    text-shadow: -1px 0 rgb(182, 194, 190), 0 1px rgb(182, 194, 190), 1px 0 rgb(182, 194, 190), 0 -1px rgb(182, 194, 190);
+    font-size: x-large;
+}
+    
+@keyframes shape-change-image {
+    25%     {height: 250px; width: 250px; border-radius: 0em; border-bottom-right-radius: 10em; border-top-right-radius: 10em; }
+    50%     {width: 250x; height: 250px; border-radius: 90%;}    
+    75%     {width: 250x; height: 250px; border-top-left-radius: 15em; border-top-right-radius: 15em; border-bottom-left-radius: 0em; border-bottom-right-radius: 0em; }
+    100%    {height: 250px; width: 250px; border-radius: 90%;}
+}
+
+.hero-photo {
+    animation-name: shape-change-image;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    height: 250px;
+    width: 250px;
+    border-radius: 90%;
+    border-style:ridge;
+}
+
+.nav-hlink{
+    padding: 1em;
+    text-decoration: none;
+    background-color: rgba(0, 191, 255, 0);
+    color: darkslateblue;
+    height:fit-content;
+}
+
+@keyframes color-change-nav-button {
+    0%      {color:darkslateblue; font-weight: bold;}
+    50%     {color: tomato; font-size: large; font-weight: bold;}
+    100%    {color:darkslateblue; font-weight: bold;}
+}
+
+.nav-hlink:hover {
+    animation-name: color-change-nav-button;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.image-mini-icon {
+    border-radius: 90%;
+    width: 30px;
+    height: 30px;
+}
+
+.image-medium-icon {
+    border-radius: 90%;
+    width: 50px;
+    height: 50px;
+}
+
+.project-section {
+    display: flex;
+    margin: 10em 0 10em 0;
+    justify-content: space-evenly;
+}
+
+.project {
+    border: 2px solid #16a2f8;
+    background-color: #16a2f8;
+    border-radius: 1em;
+    max-width: 20em;
+    max-height: 15em;
+}
+
+.proj-external {
+    display: flex;
+    justify-content: center;
+}
+
+.project-section-title {
+    text-align: center;
+    padding-top: 5em;
+}
+
+.proj-desc {
+    max-height: 6em;
+
+    text-overflow: ellipsis;
+}
+
+.about-me {
+    margin: 5em 0 5em 0;
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paralax {
+    background-color: rgba(59, 175, 213, 0.831);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-me-text {
+    text-align: center;
+    width: 50%;
+    font-family: monospace;
+    font-size: x-large;
+    color: rgb(200,200,200);
+    /*
+    rgba(64, 64, 64, 0.865);
+    */
+    text-shadow: -1px 0 black,
+        0 1px black, 
+        1px 0 black, 
+        0 -1px black;
+}
+
+.hide-hlink-underline {
+    text-decoration-line: none;
+}
+
+.education {
+    position: relative;
+    padding-top: 5em;
+}
+
+.schools {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.school-logo {
+    height: 200px;
+    width: 200px;
+}
+
+@keyframes fly-left{
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+.school-title-text {
+    font-size:x-large;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    fly-left 2s linear 0s 1;
+}
+
+.about-me-languages {
+    margin-bottom: 5em;
+}
+
+.extracurriculars {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.extracurricular {
+    text-align: center;
+    padding: 0 1em 0 1em;
+    background-color:lightsteelblue;
+    border-radius: 1em;
+}
+
+.extracurr-desc {
+    max-width: 15em;
+}
